@@ -526,4 +526,156 @@ padding: 0;
   height: 40px; 
 }
 
+/* Responsive for mobile devices */
+@media (max-width: 576px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
+  header, main {
+    margin: 0 10px; 
+  }
+
+  .nav-div {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .logo {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .brand {
+    font-size: 24px; 
+  }
+
+  .nav-item {
+    margin-right: 16px; 
+    font-size: 14px;
+  }
+
+  .primary-btn,
+  .enroll-btn {
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  /* Banner Section */
+  .container-1 {
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .header-text > .head {
+    font-size: 2rem;
+  }
+
+  .header-para {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .logo-container img{
+    width: 100%;
+    margin: auto;
+  }
+
+  /* Curriculum Section */
+  .curriculums h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .curriculum-1, .curriculum-2, .curriculum-3 {
+    width: 100%; /* Full width for small screens */
+    margin: auto; /* Reduce spacing */
+    padding: 0;
+  }
+
+  /* Stories Section */
+  .our-stories {
+    margin:auto;
+    padding: 0;
+    display: none;
+    
+  
+    
+  }
+
+  .toddler {
+    width: 100%; 
+    padding: 0;
+    margin: auto;
+    display:flex;
+   display: none;
+  }
+
+  .button-container {
+    display: none;
+  }
+
+  .father-fun {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center; /* Align items horizontally (optional for centering columns) */
+    align-items: center; /* Center the child elements horizontally */
+    margin: 0 auto; /* Ensure the container itself is centered if it's not the full width */
+}
+
+
+  .funs {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+display: flex;  
+flex-direction: column;
+}
+
+.funs img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+ 
+
+  .sec-btn, .sec-btn-2, .sec-btn-3 {
+    display: none;
+  }
+
+
+
+  /* Footer Section */
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column; 
+    margin: 0;
+    padding: 10px;
+  }
+
+  .footer-h {
+    font-size: 28px;
+  }
+
+  .footer-section p {
+    font-size: 14px;
+  }
+
+  .social-icons li img {
+    width: 30px;
+    height: 30px;
+  }
+
+  
+}
