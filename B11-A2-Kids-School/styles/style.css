@@ -10,8 +10,12 @@
 
 
 body{ 
+  margin: auto;
+}
+
+header, main{ 
     max-width: 1440px;
-    margin: auto; }
+    margin: auto 140px; }
 
 
 /* Shared Styles */
@@ -178,34 +182,34 @@ body{
     display: inline-block;
     width: 370px; 
     height: 480px;
-    margin: 28px;
     text-align: center;
     background: linear-gradient(to bottom, #def5ffdf, #ffffff);
     border-radius: 18px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 18px;
+    margin-right: 28px;
   }
   .curriculum-2 { 
     display: inline-block;
     width: 370px; 
     height: 480px;
-    margin: 28px;
     text-align: center;
     background: linear-gradient(to bottom, #fff4dcb7, #ffffff);
     border-radius: 18px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 18px;
+    margin-right: 28px;
+
   }
   .curriculum-3 { 
     display: inline-block;
     width: 370px; 
     height: 480px;
-    margin: 28px;
     text-align: center;
     background: linear-gradient(to bottom, #f2e8ff, #ffffff);
     border-radius: 18px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 18px;
   }
   
   .curriculum-1 img, .curriculum-2 img, .curriculum-3 img {
@@ -249,3 +253,277 @@ body{
     white-space: nowrap;
     border: 0;
 }
+
+.fa-solid {
+    display: none;
+    opacity: 0;
+}
+
+/* Stories */
+
+
+
+/* General styles for the section */
+.our-stories {
+  margin: 60px -140px 0;
+  background: linear-gradient(to top, rgba(254, 163, 1, 0.3), #ffffff);
+  padding: 0; 
+}
+
+
+
+/* Toddler section styling */
+.toddler {
+  width: 540px;
+  height: 630px;
+  margin-top: 80px;
+  background: #FFFFFF;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  padding-left: 80px;
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+.toddler h2 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 60px;
+  max-width: 463px;
+}
+
+.toddler p {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 20px;
+  max-width: 463px;
+
+}
+
+.toddler img {
+  width: calc(100% + 80px);
+  margin-left: -80px;
+  height: auto;
+  display: block;
+}
+
+/* Father-fun container: Grid layout */
+.father-fun {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 20px; /* Adds spacing between rows and columns */
+  margin-top: 80px;
+
+  
+}
+.fun {
+  display: flex; /* Enables flexbox for horizontal alignment */
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 20px; /* Optional: Adds space between the two sections */
+  margin-left: 140px;
+  
+}
+
+
+
+/* Individual funs box styling */
+.funs {
+  width: 260px;
+  height: 300px;
+  background: #FFFFFF;
+  text-align: left;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+padding-left: 38px;
+
+}
+
+.funs img {
+  width: calc(100% + 38px); /* Adjust width to negate the container's padding */
+  margin-left: -38px; /* Shift the image back to align with the edge of the container */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Ensures no extra inline spacing */
+}
+
+.funs p {
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 33px;
+  max-width: 214px;
+  
+}
+
+ /* Button Sec */
+
+ .sec-btn {
+  background-color: #3CD8E8; /* Cyan color */
+  color: white;
+  border: none;
+  border-radius: 48px; /* Slightly rounded corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+  position: absolute;
+  margin-top: -20px;
+}
+
+.sec-btn:hover {
+  background-color: #1f7d7d; /* Slightly darker on hover */
+}
+
+
+.sec-btn-2 {
+  background-color: #95B226; /* Cyan color */
+  color: white;
+  border: none;
+  border-radius: 48px; /* Slightly rounded corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+  position: absolute;
+  margin-top: -20px;
+}
+
+
+.sec-btn-2:hover {
+  background-color: #606e25; /* Slightly darker on hover */
+}
+
+
+.sec-btn-3 {
+  background-color: #5D58F0; /* Cyan color */
+  color: white;
+  border: none;
+  border-radius: 48px; /* Slightly rounded corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+  position: absolute;
+  margin-top: -20px;
+}
+
+.sec-btn-3:hover {
+  background-color: #28257e; /* Slightly darker on hover */
+}
+
+
+.view-all-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensures vertical stacking */
+}
+
+.view-all {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 60px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 70px;
+}
+
+  
+
+.view-all:hover {
+  background-color: #1e1e54; /* Slightly darker on hover */
+}
+
+
+
+
+/* Footer */
+
+footer {
+  background-color: #01ACFD; /* Light blue background */
+  padding: 30px 0; /* Add some padding */
+  color: #fff; /* White text color */
+}
+
+.footer-container {
+  display: flex; /* Enables flexbox for horizontal alignment */
+  justify-content: space-between; /* Aligns items to the left and right */
+  margin:125px 230px 170px 140px; /* Adds space on the left and right */
+}
+.footer-h {
+  max-width: 300px;
+  font-size: 42px ;
+  font-weight: 700;
+  max-height: 82px;
+  align-items: center;
+  padding: 0;
+}
+
+.logo-2 {
+  width: 82px;
+  height: 82px;
+  margin-right: 15px;
+}
+
+
+.footer-section p { 
+  max-width: 400px;
+  max-height: 100px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.about-f {
+padding: 0;
+  color: #FFFFFF; /* Sets the text color to white */
+}
+
+.about-f ul,
+.about-f li {
+  list-style: none; /* Removes bullet points */
+  margin-bottom: 20px;
+  padding: 0; /* Removes any default padding */
+  text-decoration: none; /* Ensures no text underline */
+  color: inherit; /* Inherits white color from the parent */
+  text-align: left;
+}
+
+.about-f h3 {
+  margin: 0;
+  padding: 0;
+}
+
+
+.social footer-section {
+  display: flex;
+  align-items: center; /* Vertically center the icons */
+  margin-top: 20px;
+}
+.social h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 26px;
+
+}
+.social-icons {
+  display: flex; /* Arrange icons horizontally */
+  list-style: none;
+  padding: 0; /* Remove default list padding */
+}
+
+.social-icons li {
+  margin: 10px;
+}
+
+.social-icons li img {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; 
+}
+
+
